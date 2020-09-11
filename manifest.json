@@ -1,0 +1,19 @@
+{
+  "name":"weather pro",
+  "short_name":"weatherpro",
+  "start_url":"/index.html",
+  "display":"standalone",
+  "background_color":"#FFE9D2",
+  "theme_color":"#FFE1C4",
+  "orientation":"portrait-primary",
+  "icons":[
+      {
+        "src":"/images/appicon.jpg",
+        "type":"image/png",
+        "sizes":"152x152"
+
+      }
+  ]
+
+
+}

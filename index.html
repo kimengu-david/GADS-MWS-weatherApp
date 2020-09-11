@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="manifest" href="./manifest.json">
+
+</head>
+
+<body>
+    <div class="app-main-wrapper">
+        <header>
+            <input type="text" autocomplete="off" class="search-box" placeholder="Enter a city name">
+
+        </header>
+        <main>
+
+
+
+            <div class="homeDisplay">
+
+                <div class="mySlides fade">
+
+                    <img src="/images/sun.png">
+                    <div class="text">Caption one</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="./images/rain.png">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="./images/cold.png">
+                    <div class="text">Caption Three</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="./images/wind.png">
+                    <div class="text">Caption Four</div>
+                </div>
+
+            </div>
+
+
+            <br>
+          
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <section class="location">
+                <div class="city"></div>
+                <div class="date"></div>
+            </section>
+            <div class="current">
+                <div class="temp"></div>
+                <div class="weather"></div>
+                <div class="range"></div>
+                <div class="hi-low"></div>
+
+            </div>
+        </main>
+
+    </div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var totalSlides= 4;
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < totalSlides; i++) {
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+    <script src="main.js"></script>
+    <footer class="footer">&copy; Copyright 2020 David Mutune</footer>
+</body>
+
+</html>
